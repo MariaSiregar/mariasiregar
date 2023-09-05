@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Rubik-Italic', sans-serif;
+}
+
+body {
+	background: linear-gradient(to right, #696969, #604020);
+}
+
+.cv {
+	width: 900px;
+	height: auto;
+	margin: 25px auto;
+	display: flex;
+	background: #fff;
+}
+
+.cv_left {
+	width: 250px;
+	padding: 0 20px;
+	background: #333333;
+}
+
+.cv_right {
+	width: calc(100%-250px)
+}
+
+.cv .cv_left .profile_pic {
+	text-align: center;
+	padding: 30px 0;
+
+}
+
+.cv .cv_left .profile_pic img {
+	width: 180px;
+	/*height: 280px;*/
+	border-radius: 30px;
+
+}
+
+
+.item {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	color: #008080;
+	position: relative;
+	text-align: left;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+p {
+	color: #333333;
+}
+
+.cv_left .text {
+	color: #333333;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.contact .li {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.contact .li .icon {
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+
+}
+
+.contact .li .text {
+	width: calc(100% - 50px);
+	word-break: break-word;
+	color: #fff;
+}
+
+.skills ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skills li {
+	width: 90px;
+	height: 90px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	background: #fff;
+
+}
+
+.skills .li .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+}
+
+.skills .li .text {
+
+	margin-top: 5px;
+	text-align: center;
+}
+
+.skills li .text:hover,
+.skills li .icon:hover {
+	color: #DAA520;
+
+}
+
+.skills li :hover {
+	border-color: : #DAA520;
+}
+
+.languages ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.languages .li {
+	display: flex;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	margin-bottom: 15px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid #fff;
+	text-align: center;
+
+}
+
+.languages .li .icon {
+	width: 100%;
+	align-items: center;
+	margin-top: 15px;
+
+}
+
+.languages .li .text {
+
+	margin-top: 5px;
+	text-align: center;
+	color: #fff;
+}
+
+
+.languages .li:hover {
+	color: #fff;
+}
+
+.languages .li:hover .icon,
+.languages .li:hover .text {
+	color: #ffcc00;
+}
+
+.languages .li .skill_progress {
+	width: 60%;
+	margin: 0 15px;
+	height: 15px;
+	background: #009fd9;
+	position: relative;
+	border-radius: 50%;
+
+}
+
+.languages .li .skill_percentage {
+	width: 15%;
+
+}
+
+.languages .li .skill_percentage span {
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+
+.cv_right .header {
+	background: #333333;
+	padding: 15px 30px;
+	height: 280px;
+}
+
+.cv_right .header .name {
+	font-size: 45px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #008080;
+}
+
+.cv_right .header .position {
+	font-weight: 300;
+	font-size: 20px;
+	color: #DAA520;
+}
+
+.cv_right .header .about {
+	margin-top: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.cv_right .content {
+	padding: 30px;
+	color: #fff;
+}
+
+.cv_right .content .professional_experience {}
+
+.cv_right .content .professional_experience .experience ul {}
+
+.cv_right .content .Certifications .courses li,
+.cv_right .content .education .qualifications li,
+.cv_right .content .professional_experience .experience li {
+
+	margin-bottom: 15px;
+	display: flex;
+}
+
+.cv_right .content .Certifications .courses li .period,
+.cv_right .content .education .qualifications li .period,
+.cv_right .content .professional_experience .experience .li .period {
+	width: 125px;
+	color: #DAA520;
+
+	float: left;
+
+}
+
+.cv_right .content .Certifications .courses li .course,
+.cv_right .content .education .qualifications li .edu,
+.cv_right .content .professional_experience .experience .li .job {
+	width: calc(100% -125px);
+	padding-left: 15px;
+	position: relative;
+	float: right;
+
+}
+
+.cv_right .content .Certifications .courses li .course_title,
+.cv_right .content .education .qualifications li .edu_board,
+.cv_right .content .professional_experience .experience .li .job_title {
+	text-transform: uppercase;
+	font-weight: 600;
+	/*letter-spacing: 2px;*/
+	color: #DAA520;
+}
+
+.cv_right .content .Certifications .courses li .course_board,
+.cv_right .content .education .qualifications li .edu_degree,
+.cv_right .content .professional_experience .experience .li .job_company {
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+	color: #333333;
+}
+
+.cv_right .content .Certifications .courses li .course_url,
+.cv_right .content .professional_experience .experience li .job_description {
+	margin-top: 05px;
+	color: #333333;
+	hyphens: auto;
+	overflow-wrap: break-word;
+	max-width: 350px;
+
+}
+
+.cv_right .content .Certifications .courses li {
+	cursor: pointer;
+}
+
+.cv_right .content .Certifications .courses li .course_title {
+	color: #8B4513;
+}
+
+.cv_right .content .Certifications .courses li .course_url {
+
+	display: none;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.cv_right .content .Certifications .courses li .course:before,
+.cv_right .content .education .qualifications li .edu:before,
+.cv_right .content .professional_experience .experience .li .job:before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #DAA520;
+	border-radius: 50%;
+}
+
+.cv_right .content .Certifications .courses li .course:after,
+.cv_right .content .education .qualifications li .edu:after,
+.cv_right .content .professional_experience .experience .li .job:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 70%;
+	background: #DAA520;
+}
+
+.langs_progress {
+	width: 30%;
+	margin: 0 15px;
+	float: left;
+	text-align: center;
+}
+
+.circlechart {
+	width: 30%;
+	margin: 0 15px;
+	float: left;
+	text-align: center;
+}
+
+.languages2 {
+	margin: 0 auto;
+	padding-left: 15vh;
+}
+
+/*
+.cv_right .content .Certifications .courses li .panel {
+
+  background-color: #DAA520;
+
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.cv_right .content .Certifications .courses li .accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  position: absolute;
+  transition: 0.4s;
+  padding-bottom: 25px;
+  
+  
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+
+
+}
+
+.active:after {
+  content: "\2212";
+}
+*/
+
+
+/*
+.container{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #03a9f4;
+}
+
+.box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #fff;
+	box-shadow: 0 30px 60px rgba(0,0,0,.2);
+}
+
+.box .percent{
+	position: relative;
+	width: 150px;
+	height: 150px;
+
+}
+
+.box .percent svg{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	
+}
+
+.box .percent svg circle{
+	width: 150px;
+	height: 150px;
+	fill:none;
+	stroke-width:10;
+	stroke:#000;
+	transform:translate(5px,5px);
+	stroke-dasharray: 440;
+	stroke-dashoffset:440;
+	stroke-linecap: round;
+}
+
+.box .percent svg circle:nth-child(1){
+	stroke-dashoffset:0;
+	stroke:#f3f3f3;
+}
+
+.box .percent svg circle:nth-child(2){
+	stroke-dashoffset:calc(440-(440*87)/100);
+	stroke:#03a9f4;
+}
+
+.box .percent .number{
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 color:#999;
+}
+.box .percent .number h2{
+	font-size: 48px;
+}
+
+.box .percent .number h2 span{
+	font-size: 24px;
+}
+
+.box .text{
+	color:#999;
+	padding: 10px 0 0;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+*/
